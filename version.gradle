@@ -24,6 +24,18 @@ ext {
     bintray_user = properties.getProperty("bintray.user")
     bintray_key = properties.getProperty("bintray.apikey")
 
+    repos = [
+            calendar_view       : "CalendarView",
+            wheel_selector      : "WheelSelector",
+            date_selector       : "DateSelector"
+    ]
+
+    bintray_versions = [
+            calendar_view       : "1.0.0",
+            wheel_selector      : "1.0.0",
+            date_selector       : "1.0.0"
+    ]
+
     license = [
             name                : "The Apache Software License, Version 2.0",
             url                 : "http://www.apache.org/licenses/LICENSE-2.0.txt"
