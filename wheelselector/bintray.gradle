@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 def ext = rootProject.ext
 
 group = ext.group
-version = ext.bintray_versions.calendar_view
+version = ext.bintray_versions.wheel_selector
 
 //打包javadocjar和sourcejar
 task sourcesJar(type: Jar) {
@@ -70,8 +70,8 @@ bintray {
     key = ext.bintray_key
     configurations = ['archives']
     pkg {
-        repo = ext.repos.calendar_view               //跟上面创建的Maven仓库名字保持一致
-        name = ext.repo.calendar_view               //发布到JCenter上的项目名字
+        repo = ext.repos.wheel_selector               //跟上面创建的Maven仓库名字保持一致
+        name = ext.repo.wheel_selector               //发布到JCenter上的项目名字
         websiteUrl = ext.siteUrl
         vcsUrl = ext.gitUrl
         licenses = ["Apache-2.0"]
