@@ -71,7 +71,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = ext.repos.date_selector               //跟上面创建的Maven仓库名字保持一致
-        name = ext.repo.date_selector               //发布到JCenter上的项目名字
+        name = ext.repos.date_selector               //发布到JCenter上的项目名字
         websiteUrl = ext.siteUrl
         vcsUrl = ext.gitUrl
         licenses = ["Apache-2.0"]
