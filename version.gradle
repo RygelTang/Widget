@@ -41,7 +41,7 @@ ext {
             junit               : "4.12",
             runner              : "1.0.2",
             espresso            : "3.0.2",
-            calendar_utils      : "1.0.0"
+            calendar_utils      : "1.0.1"
     ]
 
     support = [
@@ -55,6 +55,6 @@ ext {
     ]
 
     junit = "junit:junit:${versions.junit}"
-    calendar_utils = "cn.rygel.utils:calendarutils:${versions.calendar_utils}"
+    calendar_utils = "cn.rygel.utils:calendar:${versions.calendar_utils}"
 
 }
