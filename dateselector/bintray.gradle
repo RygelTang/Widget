@@ -24,7 +24,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
-tasks.getByPath(":calendarview:javadoc").enabled = false
+tasks.getByPath(":dateselector:javadoc").enabled = false
 
 artifacts {
     archives javadocJar

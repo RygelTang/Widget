@@ -1,1 +1,1 @@
-include ':app', ':calendarview', ':wheelselector', ':dateselector'
+include ':app', ':calendarview', ':dateselector'

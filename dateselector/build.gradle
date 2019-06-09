@@ -26,8 +26,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation ext.support.appcompat
-    implementation project(':wheelselector')
-    implementation ext.calendar_utils
+    implementation ext.switch_button
+    implementation ext.wheel_picker
+    api ext.calendar_utils
     testImplementation ext.junit
     androidTestImplementation ext.test.runner
     androidTestImplementation ext.test.espresso
