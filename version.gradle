@@ -53,7 +53,9 @@ ext {
             junit               : "4.12",
             runner              : "1.0.2",
             espresso            : "3.0.2",
-            calendar_utils      : "1.0.1"
+            switch_button       : "2.0.0",
+            wheel_picker        : "1.2.5",
+            calendar_utils      : "1.0.6"
     ]
 
     support = [
@@ -68,5 +70,7 @@ ext {
 
     junit = "junit:junit:${versions.junit}"
     calendar_utils = "cn.rygel.utils:calendar:${versions.calendar_utils}"
+    switch_button = "com.kyleduo.switchbutton:library:${versions.switch_button}"
+    wheel_picker = "com.cncoderx.wheelview:library:${versions.wheel_picker}"
 
 }
