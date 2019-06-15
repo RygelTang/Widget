@@ -32,4 +32,4 @@ dependencies {
     androidTestImplementation ext.test.espresso
 }
 
-apply from: 'bintray.gradle'
+// apply from: 'bintray.gradle'

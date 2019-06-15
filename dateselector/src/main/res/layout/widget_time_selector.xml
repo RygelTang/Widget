@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="#FFF"
+              android:layout_width="match_parent"
+              android:layout_height="300dp">
+
+    <LinearLayout
+            android:padding="@dimen/padding"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <com.cncoderx.wheelview.Wheel3DView
+                android:id="@+id/mHourSelector"
+                app:cyclic="true"
+                app:visibleItems="5"
+                app:divider="#FFF"
+                app:lineSpace="4dp"
+                app:entries="@array/hours"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:text="@string/time_separator"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <com.cncoderx.wheelview.Wheel3DView
+                android:id="@+id/mMinuteSelector"
+                app:cyclic="true"
+                app:visibleItems="5"
+                app:divider="#FFF"
+                app:lineSpace="4dp"
+                app:entries="@array/minutes"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:padding="@dimen/padding"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/mBtnSelect"
+                android:text="@string/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

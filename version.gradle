@@ -8,32 +8,30 @@ ext {
     minSdkVersion = 16
     targetSdkVersion = 28
     versionCode = 1
-    versionName = "1.0.0"
+    versionName = "1.0.2"
 
     siteUrl = 'https://github.com/RygelTang'    // project homepage
     gitUrl = 'https://github.com/RygelTang/Widget.git' // project git
 
     group = "cn.rygel.widget"
 
-    component_name = "A calendar utils for Android!"
+    component_name = "A Date Selector for Android!"
 
     package_type = "aar"
     // TODO 需要修改Repository时修改这个即可
-    repo = "CalendarView"
+    repo = "DateSelector"
 
     bintray_user = properties.getProperty("bintray.user")
     bintray_key = properties.getProperty("bintray.apikey")
 
     repos = [
             calendar_view       : "CalendarView",
-            wheel_selector      : "WheelSelector",
             date_selector       : "DateSelector"
     ]
 
     bintray_versions = [
-            calendar_view       : "1.0.0",
-            wheel_selector      : "1.0.0",
-            date_selector       : "1.0.0"
+            calendar_view       : "1.0.1",
+            date_selector       : "1.0.2"
     ]
 
     license = [
