@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:background="#FFF"
               android:layout_width="match_parent"
               android:layout_height="300dp">
 
     <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:padding="@dimen/padding"
             android:layout_weight="1"
             android:orientation="horizontal"
@@ -15,11 +15,10 @@
 
         <com.cncoderx.wheelview.Wheel3DView
                 android:id="@+id/mHourSelector"
-                app:cyclic="true"
-                app:visibleItems="5"
-                app:divider="#FFF"
-                app:lineSpace="4dp"
-                app:entries="@array/hours"
+                app:wheelCyclic="true"
+                app:wheelItemCount="7"
+                app:wheelDividerColor="#FFF"
+                app:wheelEntries="@array/hours"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
@@ -32,11 +31,10 @@
 
         <com.cncoderx.wheelview.Wheel3DView
                 android:id="@+id/mMinuteSelector"
-                app:cyclic="true"
-                app:visibleItems="5"
-                app:divider="#FFF"
-                app:lineSpace="4dp"
-                app:entries="@array/minutes"
+                app:wheelCyclic="true"
+                app:wheelItemCount="7"
+                app:wheelDividerColor="#FFF"
+                app:wheelEntries="@array/minutes"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>

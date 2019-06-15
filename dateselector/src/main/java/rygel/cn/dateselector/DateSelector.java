@@ -258,7 +258,7 @@ public class DateSelector extends LinearLayout {
         mSelectDate = solar;
     }
 
-    private void select(Solar solar) {
+    public void select(Solar solar) {
         if(getSelectMode()) {
             mSelectLunar = solar.toLunar();
             switchToLunarMode();
