@@ -23,11 +23,11 @@ public class TimeSelector extends LinearLayout {
     private OnTimeSelectListener mTimeSelectListener = null;
 
     public TimeSelector(Context context) {
-        super(context);
+        this(context,null);
     }
 
     public TimeSelector(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs,0);
     }
 
     public TimeSelector(Context context, AttributeSet attrs, int defStyleAttr) {

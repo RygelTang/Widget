@@ -126,7 +126,7 @@ public class DateSelector extends LinearLayout {
         });
         initSwitcher();
         initSelectors();
-        select(mSelectDate);
+        select(mSelectDate,getSelectMode());
     }
 
     /**
@@ -209,7 +209,7 @@ public class DateSelector extends LinearLayout {
         }
     }
 
-    private boolean getSelectMode() {
+    public boolean getSelectMode() {
         return mLunarSwitchButton.isChecked();
     }
 
@@ -258,8 +258,15 @@ public class DateSelector extends LinearLayout {
         mSelectDate = solar;
     }
 
-    public void select(Solar solar) {
-        if(getSelectMode()) {
+    /**
+     * 选择指定日期
+     * @param solar 日期
+     * @param mode 农历模式还是公历模式
+     *             true 农历模式
+     *             false 公历模式
+     */
+    public void select(Solar solar,boolean mode) {
+        if(mode) {
             mSelectLunar = solar.toLunar();
             switchToLunarMode();
         } else {

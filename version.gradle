@@ -8,7 +8,7 @@ ext {
     minSdkVersion = 16
     targetSdkVersion = 28
     versionCode = 1
-    versionName = "1.0.5"
+    versionName = "1.0.7"
 
     siteUrl = 'https://github.com/RygelTang'    // project homepage
     gitUrl = 'https://github.com/RygelTang/Widget.git' // project git
@@ -31,7 +31,7 @@ ext {
 
     bintray_versions = [
             calendar_view       : "1.0.1",
-            date_selector       : "1.0.5"
+            date_selector       : "1.0.7"
     ]
 
     license = [
